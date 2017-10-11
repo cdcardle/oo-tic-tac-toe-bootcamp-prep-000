@@ -59,7 +59,7 @@ class TicTacToe
 
     def won?
       WIN_COMBINATIONS.select do |win_com|
-        if (@board[win_com[0]] == "X" && @board[wincom[1]] == "X" && @board[win_com[2]] == "X")
+        if (@board[win_com[0]] == "X" && @board[win_com[1]] == "X" && @board[win_com[2]] == "X")
           return win_com
         elsif (@board[win_com[0]] == "O" && @board[win_com[1]] == "O" && @board[win_com[2]] == "O")
           return win_com
@@ -69,6 +69,6 @@ class TicTacToe
     end
 
     def full?
-
+      @board.all{|i| i == "X" || i == "O"}
     end
 end
