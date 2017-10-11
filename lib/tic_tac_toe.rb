@@ -44,6 +44,7 @@ class TicTacToe
 
     def current_player
       (turn_count % 2 == 0) ? "O" : "X"
+    end
 
     def turn
       puts "Please enter 1-9:"
