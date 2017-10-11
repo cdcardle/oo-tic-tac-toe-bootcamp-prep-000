@@ -23,10 +23,13 @@ class TicTacToe
   end
 
   def input_to_index(input)
-    @index = input - 1
+    @index = input.to_i - 1
   end
 
   def move(index, token="X")
     @board[index] = token
+  end
+
+  def position_taken?
   end
 end
