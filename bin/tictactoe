@@ -3,10 +3,11 @@ require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
 new_game = TicTacToe.new
-puts " Numbers correspond to these positions, good luck!"
+puts "You can exit anytime by typing 'exit'"
 puts " 1 | 2 | 3 "
 puts "-----------"
 puts " 4 | 5 | 6 "
 puts "-----------"
 puts " 7 | 8 | 9 "
+puts "Numbers correspond to the position on this board, good luck!"
 new_game.play
