@@ -35,9 +35,14 @@ class TicTacToe
     end
 
     def valid_move?(index)
-      ()(0 <= index <= 8) && !position_taken?(index))
+      ((0 <= index <= 8) && !position_taken?(index)) ? true : false
     end
 
+    def turn_count
+      
+
     def turn
+      puts "Please enter 1-9:"
+      
     end
 end
