@@ -35,7 +35,7 @@ class TicTacToe
     end
 
     def valid_move?(index)
-      ((0 <= index <= 8) && !position_taken?(index)) ? true : false
+      ((index < 0 || index > 8) || (position_taken?(index))) ? false : true
     end
 
     def turn_count
