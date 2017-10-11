@@ -4,7 +4,6 @@ require_relative '../lib/tic_tac_toe.rb'
 
 new_game = TicTacToe.new
 
-puts "You can exit anytime by typing 'exit'"
 puts " 1 | 2 | 3 "
 puts "-----------"
 puts " 4 | 5 | 6 "
