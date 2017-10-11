@@ -81,6 +81,6 @@ class TicTacToe
     end
 
     def winner
-      won? ? return win_com[0] : nil
+      won? ? return won?[0] : nil
     end
 end
