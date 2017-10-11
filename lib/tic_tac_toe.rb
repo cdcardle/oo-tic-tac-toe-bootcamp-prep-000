@@ -78,7 +78,6 @@ class TicTacToe
 
     def over?
       (draw? || won?) ? true : false
-      gets.strip == "exit" ? true : false
     end
 
     def winner
