@@ -79,4 +79,8 @@ class TicTacToe
     def over?
       (draw? || won?) ? true : false
     end
+
+    def winner
+      won? ? return win_com[0] : nil
+    end
 end
