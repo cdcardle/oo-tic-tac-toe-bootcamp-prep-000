@@ -39,10 +39,11 @@ class TicTacToe
     end
 
     def turn_count
-      
+      @board.select{|i| i == "X" || i == "O"}
+    end
 
     def turn
       puts "Please enter 1-9:"
-      
+
     end
 end
