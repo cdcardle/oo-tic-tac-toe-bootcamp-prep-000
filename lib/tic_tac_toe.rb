@@ -31,6 +31,13 @@ class TicTacToe
   end
 
   def position_taken?(index)
-    !(@board[index] == " ")
+    !(@board[index] == " " || @board[inex].nil?)
+    end
+
+    def valid_move?(index)
+      ()(0 <= index <= 8) && !position_taken?(index))
+    end
+
+    def turn
     end
 end
